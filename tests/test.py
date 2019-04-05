@@ -24,7 +24,7 @@ class TestGetRates(TestCase):
         self.assertTrue(isinstance(all_rates.get('INR'), float))
 
     def test_get_rates_with_date(self):
-        date_obj = datetime.datetime.strptime('2010-05-10', "%Y-%m-%d").date()
+        date_obj = datetime.datetime.strptime('2018-05-10', "%Y-%m-%d").date()
         all_rates = get_rates('USD', date_obj)
 
         # Check if return value of get_rates dictionary
